@@ -1,0 +1,89 @@
+a {
+  color: #ff7800;
+}
+
+a:hover,
+a:focus {
+  color: #ff7800;
+  text-decoration: underline;
+}
+
+.bg {
+  background: url('headback2.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 450px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  height: 450px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+  -webkit-box-shadow: inset 0px 11px 36px -8px rgba(143,143,143,1);
+-moz-box-shadow: inset 0px 11px 36px -8px rgba(143,143,143,1);
+box-shadow: inset 0px 11px 36px -8px rgba(143,143,143,1);
+}
+
+@media only screen and (max-width: 479px) {
+   .mobile-hide{ display: none !important; }
+   .jumbotron{
+    overflow: auto;
+      background: url('headback2.jpg') no-repeat center center;
+      -webkit-box-shadow: inset 0px 0px 0px 0px rgba(143,143,143,1);
+-moz-box-shadow: inset 0px 0px 0px 0px rgba(143,143,143,1);
+box-shadow: inset 0px 0px 0px 0px rgba(143,143,143,1);
+   }
+}
+
+
+.container {
+	overflow: auto;
+}
+
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.menuwrap {
+  display: block;
+  margin: 30px;
+}
+
+.menuimg {
+	width: 70%;
+	height: 70%;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pacifico {
+	font-family: 'Pacifico', cursive;
+}
+
+.menudesc {
+	font-style: italic;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer {
+  height: 4rem;
+  font-size: 2rem;
+  color: white;
+  display: block;
+  text-align: right;
+  background-color: gray;
+    -webkit-box-shadow: inset 0px 11px 36px -8px #5b5b5b;
+-moz-box-shadow: inset 0px 11px 36px -8px #5b5b5b;
+box-shadow: inset 0px 11px 36px -8px #5b5b5b;
+}
